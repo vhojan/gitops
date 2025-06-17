@@ -1,2 +1,2 @@
 resources:
-  - https://raw.githubusercontent.com/redhat-developer/gitops-operator/main/deploy/overlays/stable/gitops-operator.yaml
+  - https://raw.githubusercontent.com/redhat-developer/gitops-operator/main/deploy/install.yaml
