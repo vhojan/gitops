@@ -1,0 +1,20 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: osmt-cluster
+  namespace: openshift-gitops
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/vhojan/gitops.git
+    targetRevision: main
+    path: clusters/osmt
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: openshift-gitops
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
