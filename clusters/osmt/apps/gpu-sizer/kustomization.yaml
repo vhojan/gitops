@@ -1,0 +1,2 @@
+resources:
+  - https://github.com/vhojan/ai-model-gpu-sizer.git//k8s?ref=main

@@ -1,3 +1,4 @@
 resources:
   - apps/cert-manager
   - apps/gitops-self-manage
+  - apps/gpu-sizer
